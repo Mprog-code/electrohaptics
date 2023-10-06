@@ -45,7 +45,7 @@ void loop() {
   //digitalWrite(relayPin2, LOW);
 
   //Adjust the threshold value according to the sensor
-  if (pressureValue2 || pressureValue1  > 30) {         
+  if ((pressureValue2  > 30) || (pressureValue1  > 30)) {         
     digitalWrite(relayPin2, HIGH);
 
     digitalWrite(relayPin1, HIGH);
